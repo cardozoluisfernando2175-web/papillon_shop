@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papillon shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon_papillon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="papillon_logo.svg" alt="logo" width="180">
+        <nav>
+            <ul>
+                <li><a href="#INICIO">inicio</a></li>
+                <li><a href="#MENU">menú</a></li>
+                <li><a href="#CONTACTOS">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="INICIO" class="principal">
+        <div class="overlay"></div>
+        <div class="presentacion">
+            Somos un sofisticado restaurante especializado en complacer los gustos del paladar del cliente.
+        </div>
+    </div>
+
+    <div class="content site-wrapper">
+        <h2 id="MENU">MENÚ</h2>
+        <div class="fichas">
+            <div class="item">
+                <h3>FIDEOS UCHU</h3>
+                <div class="linea">
+                    <h4>ENTERO</h4>
+                    <h4>110 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>MEDIO</h4>
+                    <h4>55 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>PERSONAL</h4>
+                    <h4>30 Bs</h4>
+                </div>
+                <img src="fideos_uchu.png" alt="fideos-uchu">
+            </div>
+            <div class="item">
+                <h3>PIQUE PAPILLÓN</h3>
+                <div class="cartilla">
+                    <div class="linea">
+                        <h4>ENTERO</h4>
+                        <h4>120 Bs</h4>
+                    </div>
+                    <div class="linea">
+                        <h4>MEDIO</h4>
+                        <h4>80 Bs</h4>
+                    </div>
+                </div>
+                <img src="piquereal.png" alt="pique papillón">
+            </div>
+            <div class="item">
+                <h3>POLLOS A LA CANASTA</h3>
+                <div class="cartilla">
+                    <div class="linea">
+                        <h4>2 PRESAS</h4>
+                        <h4>80 Bs</h4>
+                    </div>
+                </div>
+                <img src="pollito_a_la_canasta.png" alt="pollos a la canasta">
+            </div>
+        </div>
+
+        <h2 id="REFRESCOS-1">REFRESCOS</h2>
+        <div class="fichas">
+            <div class="item">
+                <h3>JUGOS</h3>
+                <div class="cartilla">
+                    <div class="linea">
+                        <h4>Vaso de mocochinchi</h4>
+                        <h4>5 Bs</h4>
+                    </div>
+                    <div class="linea">
+                        <h4>Jarra de mocochinchi</h4>
+                        <h4>20 Bs</h4>
+                    </div>
+                    <div class="linea">
+                        <h4>Media jarra de mocochinchi</h4>
+                        <h4>12 Bs</h4>
+                    </div>
+                </div>
+                <img src="chesquito.png" alt="jugos">
+            </div>
+            <div class="item">
+                <h3>GASEOSAS</h3>
+                <div class="linea">
+                    <h4>Coca Cola popular</h4>
+                    <h4>8 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Coca cola 2lts</h4>
+                    <h4>15 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Agua vital 2lts</h4>
+                    <h4>10 Bs</h4>
+                </div>
+                <img src="coke.png" alt="gaseosas">
+            </div>
+        </div>
+
+        <h2 id="REFRESCOS-2">BEBIDAS</h2>
+        <div class="fichas">
+            <div class="item">
+                <h3>CERVEZAS</h3>
+                <div class="linea">
+                    <h4>Burguesa</h4>
+                    <h4>20 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Paceña</h4>
+                    <h4>22 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Huari</h4>
+                    <h4>25 Bs</h4>
+                </div>
+                <img src="chelas2.png" alt="cervezas">
+            </div>
+            <div class="item">
+                <h3>LICORES</h3>
+                <div class="linea">
+                    <h4>Etiqueta negra</h4>
+                    <h4>180 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Ron flor de caña</h4>
+                    <h4>180 Bs</h4>
+                </div>
+                <div class="linea">
+                    <h4>Vino campos de solana</h4>
+                    <h4>30 Bs</h4>
+                </div>
+                <img src="licores.png" alt="licores">
+            </div>
+        </div>
+
+        <h2 id="CONTACTOS">CONTACTOS</h2>
+        <div class="content-contactos">
+            <div class="contactos-left">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Asunto" required>
+                    <div class="campo-mensaje">
+                        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                        <div class="boton">
+                            <button type="submit"><img src="send.svg" alt="enviar" width="25"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contactos-right">
+                <div class="info">
+                    <h5>Email</h5>
+                    <p>papilloncocha@gmail.com</p><br>
+                    <h5>Teléfono</h5>
+                    <p>74813462</p><br>
+                    <h5>Ubicación</h5>
+                    <p>Cochabamba-Bolivia</p><br>
+                    <h5>Horario</h5>
+                    <p>Jueves: 11:30am - 14:00pm</p>
+                    <p>Viernes: 14:00pm - 18:00pm</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="facebook.svg" alt="facebook" width="22"></a></li>
+                <li><a href="#"><img src="instagram.svg" alt="instagram" width="22"></a></li>
+                <li><a href="#"><img src="whatsapp.svg" alt="whatsapp" width="22"></a></li>
+                <li><a href="#"><img src="twitter.svg" alt="twitter" width="22"></a></li>
+                <li><a href="#"><img src="tiktok.svg" alt="tiktok" width="22"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

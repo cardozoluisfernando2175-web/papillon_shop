@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Texturina", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section[id],
+h2[id],
+div[id]:not(.no-scroll-margin) {
+    scroll-margin-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.principal {
+    margin-top: 71px;
+    width: 100%;
+    height: calc(100vh - 71px);
+    background-image: url(lapping2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.presentacion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30rem;
+    padding: 1.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.6rem;
+    font-family: "Caveat", cursive;
+}
+
+.site-wrapper {
+    flex: 1 0 auto;
+    width: 100%;
+    /* padding: 2rem 0; */
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    margin: 2rem 0;
+}
+
+.fichas {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.item {
+    background-color: #242424;
+    width: 23rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cartilla {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.linea {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.item img {
+    height: 50%;
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+.content-contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.contactos-left,
+.contactos-right {
+    padding: 0 2rem 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #242424;
+    border-radius: 0.7rem;
+    padding: 2rem 1.5rem;
+    width: 20rem;
+}
+
+input {
+    height: 2.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid gainsboro;
+    padding: 0.8rem;
+    background-color: inherit;
+    outline: none;
+    color: white;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.info p {
+    font-size: 0.9rem;
+}
+
+.campo-mensaje {
+    display: flex;
+    align-items: center;
+}
+
+.campo-mensaje textarea {
+    width: 83%;
+    font-size: 1.1rem;
+    min-height: 4rem;
+    outline: none;
+    background-color: inherit;
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    color: white;
+    max-width: 20rem;
+    max-height: 8rem;
+    resize: none;
+    overflow: hidden;
+}
+
+.contactos-left .boton button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+.contactos-left button:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(92, 92, 92, 0.55);
+}
+
+.contactos-left button:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boton {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: black;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section[id],
+    h2[id],
+    div[id]:not(.no-scroll-margin) {
+    scroll-margin-top: 150px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .principal {
+        margin-top: 60px;
+    }
+
+    .presentacion {
+        font-size: 1.1rem;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .fichas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+        max-width: 23rem;
+    }
+
+    .content-contactos {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .contactos-left,
+    .contactos-right {
+        width: 100%;
+        max-width: 20rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .contactos-left {
+        padding-top:0 ;
+    }
+
+    .contactos-right {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .campo-mensaje {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .campo-mensaje textarea {
+        width: 100%;
+        max-width: none;
+    }
+
+    .boton {
+        align-self: flex-end;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
