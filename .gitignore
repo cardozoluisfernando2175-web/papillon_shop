@@ -1,0 +1,15 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de VS Code (opcional, si no quieres compartirla)
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+
+# Si en el futuro agregas un archivo .env (por ejemplo, para variables de entorno)
+.env
+.env.local
